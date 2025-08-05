@@ -21,3 +21,13 @@ router.post("/new", async (req,res) => {
         console.log(error);
     }
 });
+
+
+router.get("/community", async (req,res) => {
+    try {
+        const allRecipes = await Recipe.find();
+        res.render("allRecipes.ejs", { allRecipes });
+    } catch (error) {
+        console.log(error);
+    }
+});
