@@ -20,13 +20,14 @@ A digital book of directions explaining how to prepare and cook various kinds of
 
 ---
 
-<h2> How to Use</h2>
+<h2> How to Use? </h2>
 
 <p>
 1. The user starts by creating an account <br> 
 2. Log in <br>
 3. Cick add recipe <br>
 4. Show us your creativity <br>
+5. Enjoy ur meal <br>
 </p>
 
 
