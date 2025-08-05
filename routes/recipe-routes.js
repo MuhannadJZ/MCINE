@@ -31,3 +31,33 @@ router.get("/community", async (req,res) => {
         console.log(error);
     }
 });
+
+
+router.get("/:recipeId", async (req,res) => {
+    try {
+        const foundRecipe = await Recipe.findById(req.params.recipeId);
+        res.render("recipe-read.ejs", { foundRecipe });
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+router.get("/:id/update", async (req,res) => {
+    try {
+        const foundRecipe = await Recipe.findById(req.params.id);
+        res.render("Recipe-Update.ejs", { foundRecipe });
+    } catch (error) {
+        console.log(error);
+        res.send("Error");
+    }
+});
+
+router.put("/:id", async (req,res) => {
+    try {
+        await Recipe.findByIdAndUpdate(req.params.id, req.body);
+        res.redirect("/recipes/community");
+    } catch (error) {
+        console.log(error);
+        res.send("Error updating");
+    }
+});
