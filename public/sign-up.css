@@ -1,12 +1,12 @@
 * {
-  margin: 100;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family:Audiowide;
-  background: cyan;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: yellow;
   color: #333;
   height: 100vh;
   display: flex;
@@ -15,17 +15,17 @@ body {
   justify-content: center;
 }
 
-h1{
-  color: #fff;
-  margin-bottom: 1;
-  font-size: 2.5;
+h1 {
+  color: white;
+  margin-bottom: 16px;
+  font-size: 40px;
 }
 
 form {
-  background-color: #fff;
-  padding: 2rem 2.5rem;
+  background: white;
+  padding: 32px 40px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px darkred;
   width: 100%;
   max-width: 400px;
   display: flex;
@@ -40,34 +40,27 @@ label {
 input[type="text"],
 input[type="password"] {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #3300ff;
   border-radius: 6px;
-  font-size: 1;
-  transition: border-color 0.3s;
-  font-family: Audiowide;
+  font-size: 16px;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-color: cyan;
-  outline: none;
-}
+
 
 button {
   margin-top: 20px;
   padding: 12px;
-  background-color: cyan;
-  color: #fff;
+  background-color: yellow;
+  color: white;
   border: none;
   border-radius: 6px;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color:cyan;
+  background-color: yellow;
 }
-
 

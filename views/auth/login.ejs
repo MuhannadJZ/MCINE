@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/login.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Carattere&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 </style>
-
 </head>
 <body>
-    <%- include('../partials/navbar') %>
+        <%- include('../partials/navbar') %>
     <h1>Log in</h1>
-    <form action="/auth/login" method="post">
+      <form action="/auth/login" method="post">
         <label for="username">username:</label>
-        <input type="text" id="username">
+        <input type="text" name="username" id="username">
 
         <label for="password">password:</label>
-        <input type="password" id="password">
-
+        <input type="password" name="password" id="password">
         <button>Login</button>
     </form>
-    
+
+
 </body>
 </html>
