@@ -61,3 +61,20 @@ router.put("/:id", async (req,res) => {
         res.send("Error updating");
     }
 });
+router.get("/delete/:id", async (req,res) => {
+    try {
+        const foundRecipe = await Recipe.findById(req.params.id);
+        res.render("recipe-delete", { foundRecipe });
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+router.delete("/:id", async (req,res) => {
+    try {
+        await Recipe.findByIdAndDelete(req.params.id);
+        res.redirect("/recipes");
+    } catch (error) {
+        console.log(error);
+    }
+});
