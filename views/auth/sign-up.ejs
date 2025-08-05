@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="/sign-up.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Carattere&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+</style>
+
 </head>
 <body>
     <%- include('../partials/navbar') %>
 
     <h1>Sign Up</h1>
-    <form action="/auth/login" method="post">
+    <form action="/auth/sign-up" method="post">
         <label for="username">username:</label>
         <input type="text" id="username">
 
