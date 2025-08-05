@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', serif;
+  background-image: url('/assets/food.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+h2 {
+  font-family: 'Audiowide', cursive;
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px black;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px black;
+}
+
+a {
+  text-decoration: none;
+  background-color: coral;
+  color: white;
+  padding: 12px 24px;
+  margin: 0 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: #0307ff;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
